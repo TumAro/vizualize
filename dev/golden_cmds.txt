@@ -1,0 +1,140 @@
+# one mv.py invocation per line (shlex syntax). "!" prefix = must refuse (non-zero exit); text after "::" must appear in stderr.
+cayley C6
+cayley D4
+cayley S3 sub=r1
+cayley D4 sub=r2
+cayley A4
+cayley S4
+cayley Q8
+cayley C2xC4
+cayley C2xC2xC2
+quotient D4 sub=r2
+quotient C12 sub=aaaa
+quotient Q8 sub=i
+hasse S3
+hasse D4
+hasse A4
+hasse C12
+hasse S4
+hasse Q8
+hasse C2xC2xC2
+galois x^3-2
+galois x^4-2
+galois x^4-5x^2+6
+galois x^3-3x+1
+galois cyclo5
+galois cyclo7
+galois cyclo8
+galois cyclo12
+ideals 12
+ideals 30
+plot "sin(x)/x" -10 10
+plot "tan(x)" -3 3 -5 5
+conformal z**2
+conformal 1/z
+lp 1 2 inf
+lp 0.5 1 2
+dijkstra A-B:4,A-C:1,C-B:2,B-D:1,C-D:5 A
+domain "(z**2-1)/(z**2+1)"
+domain "sin(z)/z**2"
+domain "exp(1/z)"
+residue "1/(z**2+1)" 0 0 2
+residue "exp(z)/z**3" 0 0 1
+mobius 1 -1 1 1
+riemann 0 1 1+1i inf -2
+julia
+julia -0.8 0.156
+separate "0,0 2,0 2,1 0,1" 3,3
+separate "c:0,0,1" "3,1 4,1 4,2 3,2"
+extension l1 0.5
+extension l2 0.5
+extension linf 0.5
+riesz 2 1
+dual 1 2 1
+dual 4 1 2
+dual inf 1 2
+project 3 2 2 1
+fourier square 9
+fourier saw 8
+fourier tri 5
+cobweb "cos(x)" 0.2 0 1
+cobweb "2.5*x*(1-x)" 0.2 0 1
+cobweb "3.2*x*(1-x)" 0.3 0 1
+linmap 2 1 0 1.5
+linmap 0 -1 1 0
+linmap 1 2 2 4
+basis 2 0 1 1 3 2
+solid tetra
+solid cube 20 40
+solid octa
+solid dodeca
+solid icosa
+surface "x**2-y**2"
+surface "sin(x)*cos(y)" 3 60 35
+ga rotate 1 0.5 50
+ga reflect 2 1 30
+ga wedge 2 0 1 1.5
+ga rotate3 1 0 0.5 0 0 1 60
+triangle "0,0 6,0 2,4"
+bfs "A-B:4,A-C:1,C-B:2,B-D:1,C-D:5,D-E:3" A
+dfs "A-B:4,A-C:1,C-B:2,B-D:1,C-D:5,D-E:3" A
+dfs "A>B,B>C,C>A,A>C,B>D" A
+kruskal "A-B:4,A-C:1,C-B:2,B-D:1,C-D:5,D-E:3"
+prim "A-B:4,A-C:1,C-B:2,B-D:1,C-D:5,D-E:3" A
+maxflow "S>A:3,S>B:2,A>B:1,A>T:2,B>T:3"
+proofdag "ax=Axiom;L1=Lemma 1;L2=Lemma 2;T=Theorem" "ax>L1,ax>L2,L1>T,L2>T"
+comm "A B;C D" "A>B:f,A>C:g,B>D:h,C>D:k,A>D:u!" "f h = g k"
+dfa "q0 q1 q2" "a b" "q0 a q1;q0 b q0;q1 a q2;q1 b q0;q2 a q2;q2 b q2" q0 "q2" abaa
+phase pendulum
+phase lotka
+phase vanderpol
+phase damped
+phase saddle
+phase y -x-0.5*y 3
+charges "1,-1,0;-1,1,0"
+charges "2,0,0;-1,2,0;-1,-2,0"
+projectile 20 45
+projectile 20 45 0.3
+dist normal 0 1 -1 1
+dist exp 1.5 0 1
+dist uniform 0 2 .5 1.5
+dist binom 10 .3 2 4
+dist poisson 4 2 6
+clt 1
+clt 8
+rlc 10 1 1e-3
+rlc 200 1 1e-3
+rlc 63.2455532033676 1 1e-3
+rc 1000 1e-3
+lens 10 30 2
+lens 10 6 2
+lens -10 20 2
+slider pythagoras
+slider quadratic
+slider sine
+slider taylor fn=sin
+slider epsdelta
+slider eigen
+slider riemann
+!cayley D4 sub=s :: NOT normal
+!hasse S9 :: unsupported group
+!residue "1/(z-1)" 0 0 1 :: on the contour
+!mobius 1 1 1 1 :: ad-bc = 0
+!separate "0,0 2,0 2,1 0,1" "1,0.5" :: intersect
+!dual 0.5 1 1 :: p must be
+!extension l3 1 :: norm
+!fourier square 500 ::
+!basis 1 2 2 4 1 1 :: not a basis
+!triangle "0,0 1,1 2,2" :: degenerate
+!solid sphere ::
+!proofdag "a=A;b=B;c=C" "a>b,b>c,c>a" :: circular reasoning
+!comm "A B;C D" "A>B:f,A>C:g,B>D:h,C>D:k" "f h = g" :: different endpoints
+!dfa "q0 q1" "a" "q0 a q1" q0 "q1" :: not total
+!kruskal "A>B:1" :: undirected
+!maxflow "A-B:1" :: directed
+!dist normal 0 -1 :: 
+!phase nope ::
+!charges "0,0,0" ::
+!rlc -1 1 1 ::
+!lens 10 10 2 ::
+!slider taylor nope=1 :: unknown param

@@ -1,0 +1,22 @@
+[
+ {"query": "ok i'm revising galois theory tonight, can you show me the subfield lattice of Q(⁴√2, i) and which subgroups they match? i keep mixing up the order reversal", "should_trigger": true},
+ {"query": "visualise the residue theorem for f(z)=e^z/z^3 with a unit circle contour, i want to see where the poles are and what the residue is", "should_trigger": true},
+ {"query": "draw the cayley graph of the quaternion group Q8 and show what happens when you quotient by {1,-1}", "should_trigger": true},
+ {"query": "i dont get hahn banach separation at all. can you sketch a convex polygon and a point outside it and the hyperplane between them", "should_trigger": true},
+ {"query": "show me the phase portrait for a damped pendulum, mark the equilibria and tell me which are stable", "should_trigger": true},
+ {"query": "can you do a domain colouring of (z^2-1)/(z^2+1) so I can see the zeros and poles?", "should_trigger": true},
+ {"query": "walk me through kruskal vs prim on this graph A-B:4, A-C:1, C-B:2, B-D:1 with pictures of each step", "should_trigger": true},
+ {"query": "I need a dependency diagram for my proof: lemma 1 and lemma 2 both feed the main theorem. also check I haven't accidentally made it circular", "should_trigger": true},
+ {"query": "geometric algebra rotor rotating the vector (1,0,0.5) by 60 degrees about the z axis, can you show it visually", "should_trigger": true},
+ {"query": "how does the central limit theorem look for sums of 8 dice vs the normal curve? show me", "should_trigger": true},
+ {"query": "make a bar chart of our Q3 sales by region from this csv, colours should match our brand deck", "should_trigger": false},
+ {"query": "my python function for the determinant of a 3x3 matrix returns the wrong sign, can you find the bug in this code", "should_trigger": false},
+ {"query": "what is the galois group of x^5 - x - 1 over Q? just the answer and a one line reason please, no pictures", "should_trigger": false},
+ {"query": "write a latex proof that sqrt(2) is irrational, full formal style for my problem set", "should_trigger": false},
+ {"query": "help me design a logo for my maths tutoring business, something friendly with a pi symbol", "should_trigger": false},
+ {"query": "solve the ODE y'' + 3y' + 2y = 0 with y(0)=1, y'(0)=0 step by step algebraically", "should_trigger": false},
+ {"query": "draw an ER diagram for a library database with books, members and loans", "should_trigger": false},
+ {"query": "make a line chart of daily active users over the last 90 days from this dataframe", "should_trigger": false},
+ {"query": "explain the big-O time complexity of dijkstra with a binary heap, i just need the reasoning in words", "should_trigger": false},
+ {"query": "convert this matplotlib script into plotly express, keep the same layout", "should_trigger": false}
+]

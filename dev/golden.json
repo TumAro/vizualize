@@ -1,0 +1,1238 @@
+{
+ "!basis 1 2 2 4 1 1": {
+  "msg": "not a basis"
+ },
+ "!cayley D4 sub=s": {
+  "msg": "NOT normal"
+ },
+ "!charges 0,0,0": {
+  "msg": ""
+ },
+ "!comm 'A B;C D' 'A>B:f,A>C:g,B>D:h,C>D:k' 'f h = g'": {
+  "msg": "different endpoints"
+ },
+ "!dfa 'q0 q1' a 'q0 a q1' q0 q1": {
+  "msg": "not total"
+ },
+ "!dist normal 0 -1": {
+  "msg": ""
+ },
+ "!dual 0.5 1 1": {
+  "msg": "p must be"
+ },
+ "!extension l3 1": {
+  "msg": "norm"
+ },
+ "!fourier square 500": {
+  "msg": ""
+ },
+ "!hasse S9": {
+  "msg": "unsupported group"
+ },
+ "!kruskal 'A>B:1'": {
+  "msg": "undirected"
+ },
+ "!lens 10 10 2": {
+  "msg": ""
+ },
+ "!maxflow A-B:1": {
+  "msg": "directed"
+ },
+ "!mobius 1 1 1 1": {
+  "msg": "ad-bc = 0"
+ },
+ "!phase nope": {
+  "msg": ""
+ },
+ "!proofdag 'a=A;b=B;c=C' 'a>b,b>c,c>a'": {
+  "msg": "circular reasoning"
+ },
+ "!residue '1/(z-1)' 0 0 1": {
+  "msg": "on the contour"
+ },
+ "!rlc -1 1 1": {
+  "msg": ""
+ },
+ "!separate '0,0 2,0 2,1 0,1' 1,0.5": {
+  "msg": "intersect"
+ },
+ "!slider taylor nope=1": {
+  "msg": "unknown param"
+ },
+ "!solid sphere": {
+  "msg": ""
+ },
+ "!triangle '0,0 1,1 2,2'": {
+  "msg": "degenerate"
+ },
+ "basis 2 0 1 1 3 2": {
+  "plain": [
+   "fe13494be659fcbe",
+   2628
+  ],
+  "widget": [
+   "274deca5941e9e45",
+   2687
+  ]
+ },
+ "bfs A-B:4,A-C:1,C-B:2,B-D:1,C-D:5,D-E:3 A": {
+  "plain": [
+   "456f73bb2413a436",
+   6441
+  ],
+  "widget": [
+   "4c1d259a740dabdd",
+   6500
+  ]
+ },
+ "cayley A4": {
+  "plain": [
+   "42cc91fce11ddd29",
+   3277
+  ],
+  "widget": [
+   "f51387212bc14e17",
+   3336
+  ]
+ },
+ "cayley C2xC2xC2": {
+  "plain": [
+   "6f660f9321d1ff25",
+   2371
+  ],
+  "widget": [
+   "5916a60f99d67aa1",
+   2430
+  ]
+ },
+ "cayley C2xC4": {
+  "plain": [
+   "490529a030c47d5e",
+   2426
+  ],
+  "widget": [
+   "6d14bc7aa2941885",
+   2485
+  ]
+ },
+ "cayley C6": {
+  "plain": [
+   "0d936ae048573ee6",
+   1686
+  ],
+  "widget": [
+   "c7eb71e11ea7973c",
+   1745
+  ]
+ },
+ "cayley D4": {
+  "plain": [
+   "09fc2407bb6e805a",
+   2421
+  ],
+  "widget": [
+   "ed06460d04afca09",
+   2480
+  ]
+ },
+ "cayley D4 sub=r2": {
+  "plain": [
+   "b23207985e062f05",
+   2540
+  ],
+  "widget": [
+   "1ab9156a6bbcab83",
+   2599
+  ]
+ },
+ "cayley Q8": {
+  "plain": [
+   "6ef45e27058316e4",
+   2816
+  ],
+  "widget": [
+   "afa935df8767ccc2",
+   2875
+  ]
+ },
+ "cayley S3 sub=r1": {
+  "plain": [
+   "d52bc3fc7fefd8f6",
+   2088
+  ],
+  "widget": [
+   "0740c28e45dc35f4",
+   2147
+  ]
+ },
+ "cayley S4": {
+  "plain": [
+   "4e8b239ddf0e8501",
+   5868
+  ],
+  "widget": [
+   "83c3c2d59d8f34e6",
+   5927
+  ]
+ },
+ "charges '1,-1,0;-1,1,0'": {
+  "plain": [
+   "094f4ecadc9144b8",
+   4156
+  ],
+  "widget": [
+   "b866cc048e517d64",
+   4215
+  ]
+ },
+ "charges '2,0,0;-1,2,0;-1,-2,0'": {
+  "plain": [
+   "0265d3db71d7f171",
+   4149
+  ],
+  "widget": [
+   "e441e6254be3576a",
+   4208
+  ]
+ },
+ "clt 1": {
+  "plain": [
+   "423e0f9526514b4a",
+   2430
+  ],
+  "widget": [
+   "0e2a87f45555fc7f",
+   2489
+  ]
+ },
+ "clt 8": {
+  "plain": [
+   "76b5caa136c210f6",
+   4735
+  ],
+  "widget": [
+   "327389414bca3344",
+   4794
+  ]
+ },
+ "cobweb '2.5*x*(1-x)' 0.2 0 1": {
+  "plain": [
+   "9139b71fe85c0205",
+   2945
+  ],
+  "widget": [
+   "7907c3825a12376a",
+   3004
+  ]
+ },
+ "cobweb '3.2*x*(1-x)' 0.3 0 1": {
+  "plain": [
+   "1e755086a5536fa7",
+   2838
+  ],
+  "widget": [
+   "57bd6710eb00a319",
+   2897
+  ]
+ },
+ "cobweb 'cos(x)' 0.2 0 1": {
+  "plain": [
+   "62b98411f978b784",
+   2799
+  ],
+  "widget": [
+   "4226875e19e13d08",
+   2858
+  ]
+ },
+ "comm 'A B;C D' 'A>B:f,A>C:g,B>D:h,C>D:k,A>D:u!' 'f h = g k'": {
+  "plain": [
+   "00bc17774192e01c",
+   1510
+  ],
+  "widget": [
+   "4afa2ffaed61eb82",
+   1569
+  ]
+ },
+ "conformal 'z**2'": {
+  "plain": [
+   "bb19852b504dab2a",
+   5525
+  ],
+  "widget": [
+   "45836c828067060f",
+   5584
+  ]
+ },
+ "conformal 1/z": {
+  "plain": [
+   "527ca509e15066ed",
+   5601
+  ],
+  "widget": [
+   "f38734fcf91f7eea",
+   5660
+  ]
+ },
+ "dfa 'q0 q1 q2' 'a b' 'q0 a q1;q0 b q0;q1 a q2;q1 b q0;q2 a q2;q2 b q2' q0 q2 abaa": {
+  "plain": [
+   "3e44b7edc7a6d3f7",
+   2142
+  ],
+  "widget": [
+   "f13cea147697f194",
+   2201
+  ]
+ },
+ "dfs 'A>B,B>C,C>A,A>C,B>D' A": {
+  "plain": [
+   "ecef1f087473240a",
+   2959
+  ],
+  "widget": [
+   "4ab8e0ef0561d5c7",
+   3018
+  ]
+ },
+ "dfs A-B:4,A-C:1,C-B:2,B-D:1,C-D:5,D-E:3 A": {
+  "plain": [
+   "05c66d035e97f88b",
+   3455
+  ],
+  "widget": [
+   "c70ecd69e614b133",
+   3514
+  ]
+ },
+ "dijkstra A-B:4,A-C:1,C-B:2,B-D:1,C-D:5 A": {
+  "plain": [
+   "969c1b28587b4192",
+   7284
+  ],
+  "widget": [
+   "317796add48c4bde",
+   7335
+  ]
+ },
+ "dist binom 10 .3 2 4": {
+  "plain": [
+   "bc213a15ad4c6831",
+   1805
+  ],
+  "widget": [
+   "06e324e148ce6201",
+   1864
+  ]
+ },
+ "dist exp 1.5 0 1": {
+  "plain": [
+   "3b2c1e88d5025ac0",
+   2684
+  ],
+  "widget": [
+   "48604fc4cddff5cf",
+   2743
+  ]
+ },
+ "dist normal 0 1 -1 1": {
+  "plain": [
+   "51c632699991860b",
+   2990
+  ],
+  "widget": [
+   "4def7900df7f46bc",
+   3049
+  ]
+ },
+ "dist poisson 4 2 6": {
+  "plain": [
+   "412ddf0e9fb029d7",
+   2528
+  ],
+  "widget": [
+   "1f07ff7c32648be5",
+   2587
+  ]
+ },
+ "dist uniform 0 2 .5 1.5": {
+  "plain": [
+   "e0f6509e8207ae34",
+   3280
+  ],
+  "widget": [
+   "2277a67e66695131",
+   3339
+  ]
+ },
+ "domain '(z**2-1)/(z**2+1)'": {
+  "plain": [
+   "8e5f16b8034511bc",
+   3636
+  ],
+  "widget": [
+   "13536219e1236035",
+   3428
+  ]
+ },
+ "domain 'exp(1/z)'": {
+  "plain": [
+   "9afceca76657c834",
+   3516
+  ],
+  "widget": [
+   "467193645073f631",
+   3308
+  ]
+ },
+ "domain 'sin(z)/z**2'": {
+  "plain": [
+   "0d49fc29b8bd983b",
+   3541
+  ],
+  "widget": [
+   "8ae5129e95ee77fc",
+   3333
+  ]
+ },
+ "dual 1 2 1": {
+  "plain": [
+   "54c05e261e44fa7f",
+   1381
+  ],
+  "widget": [
+   "5f9b748922dbd72c",
+   1382
+  ]
+ },
+ "dual 4 1 2": {
+  "plain": [
+   "a6cc2665e95582d0",
+   2052
+  ],
+  "widget": [
+   "7162110bcc995a1a",
+   2053
+  ]
+ },
+ "dual inf 1 2": {
+  "plain": [
+   "b1cdc2f0032cc27c",
+   1378
+  ],
+  "widget": [
+   "7ba43084b207203d",
+   1379
+  ]
+ },
+ "extension l1 0.5": {
+  "plain": [
+   "864fbd0876d55da5",
+   1674
+  ],
+  "widget": [
+   "3a28919281402577",
+   1733
+  ]
+ },
+ "extension l2 0.5": {
+  "plain": [
+   "ef7d4a06dfb63d0d",
+   2161
+  ],
+  "widget": [
+   "4b986a28a1ca9d3e",
+   2220
+  ]
+ },
+ "extension linf 0.5": {
+  "plain": [
+   "5ceebb60d8cef292",
+   1499
+  ],
+  "widget": [
+   "e8e53d96bb7fedf3",
+   1558
+  ]
+ },
+ "fourier saw 8": {
+  "plain": [
+   "313d3df09ecf5365",
+   3751
+  ],
+  "widget": [
+   "9818a5df740d83db",
+   3810
+  ]
+ },
+ "fourier square 9": {
+  "plain": [
+   "feae08106acd9e75",
+   3779
+  ],
+  "widget": [
+   "abe873f9d9161564",
+   3838
+  ]
+ },
+ "fourier tri 5": {
+  "plain": [
+   "a6fab1320f39a197",
+   3635
+  ],
+  "widget": [
+   "038e68e4d01d5773",
+   3694
+  ]
+ },
+ "ga reflect 2 1 30": {
+  "plain": [
+   "9da9aad1840c2c7e",
+   1231
+  ],
+  "widget": [
+   "7a136652e1a76438",
+   1290
+  ]
+ },
+ "ga rotate 1 0.5 50": {
+  "plain": [
+   "472dc58e0e107a00",
+   1526
+  ],
+  "widget": [
+   "80cc62dc2f8295ab",
+   1585
+  ]
+ },
+ "ga rotate3 1 0 0.5 0 0 1 60": {
+  "plain": [
+   "464748a4cd28ba26",
+   1806
+  ],
+  "widget": [
+   "8d2e5eb074faf332",
+   1865
+  ]
+ },
+ "ga wedge 2 0 1 1.5": {
+  "plain": [
+   "f4ee46ef10074634",
+   1173
+  ],
+  "widget": [
+   "0a07b30400242419",
+   1174
+  ]
+ },
+ "galois 'x^3-2'": {
+  "plain": [
+   "cdcff595b47e3f15",
+   2578
+  ],
+  "widget": [
+   "27298eb4cd181018",
+   2637
+  ]
+ },
+ "galois 'x^3-3x+1'": {
+  "plain": [
+   "94d63e1cfcd30592",
+   1156
+  ],
+  "widget": [
+   "567bec6ecf385562",
+   1215
+  ]
+ },
+ "galois 'x^4-2'": {
+  "plain": [
+   "979d4df14fbb9acc",
+   4170
+  ],
+  "widget": [
+   "8f49b2e4628c9259",
+   4229
+  ]
+ },
+ "galois 'x^4-5x^2+6'": {
+  "plain": [
+   "7b0db7efbb6265c8",
+   2240
+  ],
+  "widget": [
+   "644aa003d05e3164",
+   2299
+  ]
+ },
+ "galois cyclo12": {
+  "plain": [
+   "4aeaa81a3bac3d89",
+   2246
+  ],
+  "widget": [
+   "37445fa99b41418a",
+   2305
+  ]
+ },
+ "galois cyclo5": {
+  "plain": [
+   "c8e6ec6be1762bac",
+   1413
+  ],
+  "widget": [
+   "dc8f03b819257d72",
+   1472
+  ]
+ },
+ "galois cyclo7": {
+  "plain": [
+   "08936f3da4e6c771",
+   1853
+  ],
+  "widget": [
+   "c88b3ce0a07ec6f2",
+   1912
+  ]
+ },
+ "galois cyclo8": {
+  "plain": [
+   "df92e951f1ff8b11",
+   2245
+  ],
+  "widget": [
+   "a9a62ee0d9cea5f0",
+   2304
+  ]
+ },
+ "hasse A4": {
+  "plain": [
+   "49429b7e0cc33f6a",
+   2031
+  ],
+  "widget": [
+   "85fa7eea12c02bf6",
+   2090
+  ]
+ },
+ "hasse C12": {
+  "plain": [
+   "648d96711b6cf726",
+   1305
+  ],
+  "widget": [
+   "edd99422c103fbbf",
+   1364
+  ]
+ },
+ "hasse C2xC2xC2": {
+  "plain": [
+   "bc26a6c27af72fd7",
+   4059
+  ],
+  "widget": [
+   "e7c96a018f1e3221",
+   4118
+  ]
+ },
+ "hasse D4": {
+  "plain": [
+   "b282e6c9d9d93ec3",
+   2030
+  ],
+  "widget": [
+   "654e318af499d6eb",
+   2089
+  ]
+ },
+ "hasse Q8": {
+  "plain": [
+   "4a258b8a03588834",
+   1290
+  ],
+  "widget": [
+   "c55c5b3c51fcfbb1",
+   1349
+  ]
+ },
+ "hasse S3": {
+  "plain": [
+   "bd7916b13652f8f8",
+   1349
+  ],
+  "widget": [
+   "6351fc3df1b1eceb",
+   1408
+  ]
+ },
+ "hasse S4": {
+  "plain": [
+   "f0ed8d8e4ce50919",
+   7204
+  ],
+  "widget": [
+   "b9ab8e2b90c0bf4b",
+   7263
+  ]
+ },
+ "ideals 12": {
+  "plain": [
+   "8cf3203f7165bc5a",
+   1902
+  ],
+  "widget": [
+   "590e14d4d62888aa",
+   1961
+  ]
+ },
+ "ideals 30": {
+  "plain": [
+   "e326f6ba3d1feda1",
+   2494
+  ],
+  "widget": [
+   "830229ab42f1cc9d",
+   2553
+  ]
+ },
+ "julia": {
+  "plain": [
+   "f076c4df30d1ce87",
+   1782
+  ],
+  "widget": [
+   "98f95324d35ec618",
+   1574
+  ]
+ },
+ "julia -0.8 0.156": {
+  "plain": [
+   "f076c4df30d1ce87",
+   1782
+  ],
+  "widget": [
+   "98f95324d35ec618",
+   1574
+  ]
+ },
+ "kruskal A-B:4,A-C:1,C-B:2,B-D:1,C-D:5,D-E:3": {
+  "plain": [
+   "bc8c76973a45b8ae",
+   3878
+  ],
+  "widget": [
+   "37b06a225c14619c",
+   3937
+  ]
+ },
+ "lens -10 20 2": {
+  "plain": [
+   "08b843deb2410d88",
+   1864
+  ],
+  "widget": [
+   "5f216b318ff6b3c9",
+   1923
+  ]
+ },
+ "lens 10 30 2": {
+  "plain": [
+   "1a079555ed2b7ba7",
+   1659
+  ],
+  "widget": [
+   "05ac70e37a3b98de",
+   1718
+  ]
+ },
+ "lens 10 6 2": {
+  "plain": [
+   "9cd5815935433ba7",
+   1851
+  ],
+  "widget": [
+   "e00e19ad37a65003",
+   1910
+  ]
+ },
+ "linmap 0 -1 1 0": {
+  "plain": [
+   "2095393904508bfd",
+   5289
+  ],
+  "widget": [
+   "616b0726c1845a58",
+   5348
+  ]
+ },
+ "linmap 1 2 2 4": {
+  "plain": [
+   "8b851eaf607815ec",
+   5712
+  ],
+  "widget": [
+   "e3a8bcc70da5071a",
+   5771
+  ]
+ },
+ "linmap 2 1 0 1.5": {
+  "plain": [
+   "bbe0a2fe4a3321a5",
+   5728
+  ],
+  "widget": [
+   "d8f6d7862c9444c5",
+   5787
+  ]
+ },
+ "lp 0.5 1 2": {
+  "plain": [
+   "2b7fecc3126de782",
+   5515
+  ],
+  "widget": [
+   "e37d349f9413e131",
+   5574
+  ]
+ },
+ "lp 1 2 inf": {
+  "plain": [
+   "ae819187c8abfee3",
+   3996
+  ],
+  "widget": [
+   "7cf5bc107dd35a95",
+   4055
+  ]
+ },
+ "maxflow 'S>A:3,S>B:2,A>B:1,A>T:2,B>T:3'": {
+  "plain": [
+   "b15006689d4be48c",
+   6735
+  ],
+  "widget": [
+   "ca39021472e917c6",
+   6794
+  ]
+ },
+ "mobius 1 -1 1 1": {
+  "plain": [
+   "20182b0d21deb33d",
+   6944
+  ],
+  "widget": [
+   "138177e236856429",
+   7028
+  ]
+ },
+ "phase damped": {
+  "plain": [
+   "6bf72e9ac800c0a1",
+   4999
+  ],
+  "widget": [
+   "a9db77103a4e0a7f",
+   5058
+  ]
+ },
+ "phase lotka": {
+  "plain": [
+   "cdd695c0746527cd",
+   7687
+  ],
+  "widget": [
+   "6bfae4417e66c568",
+   7746
+  ]
+ },
+ "phase pendulum": {
+  "plain": [
+   "d2af72e5deb5d579",
+   10739
+  ],
+  "widget": [
+   "24c8061e0f415ff1",
+   10798
+  ]
+ },
+ "phase saddle": {
+  "plain": [
+   "b881e7837f3e0482",
+   3955
+  ],
+  "widget": [
+   "5635817cc8de941a",
+   4014
+  ]
+ },
+ "phase vanderpol": {
+  "plain": [
+   "4e78b17f80bc0597",
+   6826
+  ],
+  "widget": [
+   "54f4e70822399e70",
+   6885
+  ]
+ },
+ "phase y '-x-0.5*y' 3": {
+  "plain": [
+   "bb3a8fe315b9951c",
+   7090
+  ],
+  "widget": [
+   "add2406d7a28e248",
+   7149
+  ]
+ },
+ "plot 'sin(x)/x' -10 10": {
+  "plain": [
+   "56430cebad81a376",
+   2027
+  ],
+  "widget": [
+   "2763e75f4fef131e",
+   2086
+  ]
+ },
+ "plot 'tan(x)' -3 3 -5 5": {
+  "plain": [
+   "33180451a08be7d0",
+   1928
+  ],
+  "widget": [
+   "955632930ac67de2",
+   1987
+  ]
+ },
+ "prim A-B:4,A-C:1,C-B:2,B-D:1,C-D:5,D-E:3 A": {
+  "plain": [
+   "f90decc268d465c7",
+   2999
+  ],
+  "widget": [
+   "72dc0181961cb1b9",
+   3058
+  ]
+ },
+ "project 3 2 2 1": {
+  "plain": [
+   "13091050de38cc5d",
+   1291
+  ],
+  "widget": [
+   "4dc5eda6032a2b1d",
+   1350
+  ]
+ },
+ "projectile 20 45": {
+  "plain": [
+   "a650bc4798e4052d",
+   2887
+  ],
+  "widget": [
+   "e735f77399929a51",
+   2946
+  ]
+ },
+ "projectile 20 45 0.3": {
+  "plain": [
+   "e44ee9bca12b8ab5",
+   2826
+  ],
+  "widget": [
+   "24dc9d78d157a5b1",
+   2885
+  ]
+ },
+ "proofdag 'ax=Axiom;L1=Lemma 1;L2=Lemma 2;T=Theorem' 'ax>L1,ax>L2,L1>T,L2>T'": {
+  "plain": [
+   "8ba617bf30aa760e",
+   1563
+  ],
+  "widget": [
+   "82090453cc209952",
+   1622
+  ]
+ },
+ "quotient C12 sub=aaaa": {
+  "plain": [
+   "39dd499c9670311b",
+   1365
+  ],
+  "widget": [
+   "427499bf87826021",
+   1424
+  ]
+ },
+ "quotient D4 sub=r2": {
+  "plain": [
+   "43cfbd6d27d7e9ff",
+   1405
+  ],
+  "widget": [
+   "7327ce6bed20b06e",
+   1464
+  ]
+ },
+ "quotient Q8 sub=i": {
+  "plain": [
+   "00ae7d33bd5ad738",
+   1023
+  ],
+  "widget": [
+   "1d319f93f7c289ee",
+   1082
+  ]
+ },
+ "rc 1000 1e-3": {
+  "plain": [
+   "7ed1d8a3243c5dd8",
+   2275
+  ],
+  "widget": [
+   "eff37ccf395e92e4",
+   2334
+  ]
+ },
+ "residue '1/(z**2+1)' 0 0 2": {
+  "plain": [
+   "175cfa3579e7b4f1",
+   739
+  ],
+  "widget": [
+   "9daed40c69089106",
+   823
+  ]
+ },
+ "residue 'exp(z)/z**3' 0 0 1": {
+  "plain": [
+   "055370b2a6e31c9e",
+   605
+  ],
+  "widget": [
+   "2c81ecae1f23831b",
+   689
+  ]
+ },
+ "riemann 0 1 1+1i inf -2": {
+  "plain": [
+   "8cd27e9c005e1163",
+   4446
+  ],
+  "widget": [
+   "ace8aa2ac0459893",
+   4530
+  ]
+ },
+ "riesz 2 1": {
+  "plain": [
+   "ea396615e6ac5b0e",
+   1820
+  ],
+  "widget": [
+   "4c38aaf3c5151b17",
+   1879
+  ]
+ },
+ "rlc 10 1 1e-3": {
+  "plain": [
+   "eb772f747ce566f4",
+   3068
+  ],
+  "widget": [
+   "2cb69ec380497d0f",
+   3127
+  ]
+ },
+ "rlc 200 1 1e-3": {
+  "plain": [
+   "36985d0efb8e6f9c",
+   2133
+  ],
+  "widget": [
+   "ca74a15376d370d7",
+   2192
+  ]
+ },
+ "rlc 63.2455532033676 1 1e-3": {
+  "plain": [
+   "989071fa86aa252a",
+   2222
+  ],
+  "widget": [
+   "ced1354299b98c11",
+   2281
+  ]
+ },
+ "separate '0,0 2,0 2,1 0,1' 3,3": {
+  "plain": [
+   "99d62482bd659457",
+   1181
+  ],
+  "widget": [
+   "63c2e05795f82546",
+   1240
+  ]
+ },
+ "separate c:0,0,1 '3,1 4,1 4,2 3,2'": {
+  "plain": [
+   "b69704c20f9085ad",
+   1225
+  ],
+  "widget": [
+   "343f99a34b14cda9",
+   1284
+  ]
+ },
+ "slider eigen": {
+  "plain": [
+   "d079bc9315c1723b",
+   6639
+  ],
+  "widget": [
+   "19b6e1cc345f2044",
+   6212
+  ]
+ },
+ "slider epsdelta": {
+  "plain": [
+   "125010cc98f17f9e",
+   5989
+  ],
+  "widget": [
+   "d123da573412a376",
+   5579
+  ]
+ },
+ "slider pythagoras": {
+  "plain": [
+   "a99519f90006e3d8",
+   5892
+  ],
+  "widget": [
+   "c2bbefa97d0a5a43",
+   5490
+  ]
+ },
+ "slider quadratic": {
+  "plain": [
+   "830eea836feaf1d0",
+   6102
+  ],
+  "widget": [
+   "c6db71794b13223d",
+   5693
+  ]
+ },
+ "slider riemann": {
+  "plain": [
+   "600347f63c529c06",
+   6039
+  ],
+  "widget": [
+   "5b4b75321da31851",
+   5634
+  ]
+ },
+ "slider sine": {
+  "plain": [
+   "27f7d6805a5dcc25",
+   5751
+  ],
+  "widget": [
+   "7c1f74ca58f83523",
+   5336
+  ]
+ },
+ "slider taylor fn=sin": {
+  "plain": [
+   "0a607ea877aad469",
+   6116
+  ],
+  "widget": [
+   "c727b348dcf5adc6",
+   5708
+  ]
+ },
+ "solid cube 20 40": {
+  "plain": [
+   "d3926a5eb977c097",
+   2049
+  ],
+  "widget": [
+   "3349953c08637815",
+   2108
+  ]
+ },
+ "solid dodeca": {
+  "plain": [
+   "4645b231a9f2a2d0",
+   3673
+  ],
+  "widget": [
+   "95acf20f7405bb8a",
+   3732
+  ]
+ },
+ "solid icosa": {
+  "plain": [
+   "96078c8a30f3bf20",
+   4028
+  ],
+  "widget": [
+   "44d86c978efc7064",
+   4087
+  ]
+ },
+ "solid octa": {
+  "plain": [
+   "f80bee10e49ada74",
+   2123
+  ],
+  "widget": [
+   "572581f81fa7840a",
+   2182
+  ]
+ },
+ "solid tetra": {
+  "plain": [
+   "96777a2f0c24ddbe",
+   1467
+  ],
+  "widget": [
+   "b9114b815e75f082",
+   1526
+  ]
+ },
+ "surface 'sin(x)*cos(y)' 3 60 35": {
+  "plain": [
+   "b7fa65ffb14d77ad",
+   6413
+  ],
+  "widget": [
+   "f7385ced50848963",
+   6472
+  ]
+ },
+ "surface 'x**2-y**2'": {
+  "plain": [
+   "95ecbc3ddf9fe43e",
+   6537
+  ],
+  "widget": [
+   "598c09342c85ae51",
+   6596
+  ]
+ },
+ "triangle '0,0 6,0 2,4'": {
+  "plain": [
+   "4c967fe441bb4244",
+   2457
+  ],
+  "widget": [
+   "e1471a26e21f84f0",
+   2458
+  ]
+ }
+}

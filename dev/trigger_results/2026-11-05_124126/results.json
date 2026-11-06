@@ -1,0 +1,888 @@
+{
+  "exit_reason": "max_iterations (3)",
+  "original_description": "Fast, rigorous in-chat visualisations for advanced mathematics - abstract algebra (groups, Cayley graphs, subgroup lattices, quotient groups, field extensions and towers, Galois), complex analysis (complex plane, conformal maps, domain colouring, Cauchy integral theorem, residues, contours), geometry and geometric algebra, functional analysis (Hahn-Banach, Riesz representation, norms and unit balls, projections, operators), graphs and graph algorithms, commutative diagrams and proof-structure diagrams, and STEM beyond pure maths (ODE phase portraits and equilibria, probability distributions and the central limit theorem, electric fields, projectile motion, RLC/RC circuits, thin-lens optics). Use whenever the user asks to visualise, draw, picture, sketch, plot, illustrate or \"show me\" any such concept, or is learning/revising a theorem or proof and a diagram would help, even if they never say \"visualisation\". Output is inline SVG / Mermaid in chat (JSXGraph only when dragging teaches), never slow renders.",
+  "best_description": "Fast, rigorous in-chat visualisations for advanced mathematics - abstract algebra (groups, Cayley graphs, subgroup lattices, quotient groups, field extensions and towers, Galois), complex analysis (complex plane, conformal maps, domain colouring, Cauchy integral theorem, residues, contours), geometry and geometric algebra, functional analysis (Hahn-Banach, Riesz representation, norms and unit balls, projections, operators), graphs and graph algorithms, commutative diagrams and proof-structure diagrams, and STEM beyond pure maths (ODE phase portraits and equilibria, probability distributions and the central limit theorem, electric fields, projectile motion, RLC/RC circuits, thin-lens optics). Use whenever the user asks to visualise, draw, picture, sketch, plot, illustrate or \"show me\" any such concept, or is learning/revising a theorem or proof and a diagram would help, even if they never say \"visualisation\". Output is inline SVG / Mermaid in chat (JSXGraph only when dragging teaches), never slow renders.",
+  "best_score": "4/6",
+  "best_train_score": "10/14",
+  "best_test_score": "4/6",
+  "final_description": "Use this skill when the user wants to SEE a specific mathematical or STEM concept as a picture: \"show me\", \"visualise\", \"draw\", \"plot\", \"sketch\", \"mark the...\", \"walk me through\" an example. Covers complex analysis (domain colouring, zeros and poles, residues, contour integrals, M\u00f6bius/conformal maps), abstract algebra (groups, Cayley graphs, subgroup lattices, Galois/field towers), geometry and geometric algebra, functional analysis (norms, Hahn-Banach, Riesz, projections), graph algorithms (BFS/DFS, Dijkstra, Kruskal/Prim, max-flow), commutative and proof diagrams, and applied STEM: ODE phase portraits and equilibria stability (pendulum, predator-prey), distributions and the central limit theorem (dice sums vs normal curve), electric fields, projectile motion, RLC circuits, lens optics. Also use when someone is learning or revising a theorem or algorithm and a diagram would help. Outputs quick, verified inline SVG/Mermaid. Not for business or data-analysis charts, dashboards, plotting-library code conversion, ER/software diagrams, logos, or plain coding questions.",
+  "iterations_run": 3,
+  "holdout": 0.3,
+  "train_size": 14,
+  "test_size": 6,
+  "history": [
+    {
+      "iteration": 1,
+      "description": "Fast, rigorous in-chat visualisations for advanced mathematics - abstract algebra (groups, Cayley graphs, subgroup lattices, quotient groups, field extensions and towers, Galois), complex analysis (complex plane, conformal maps, domain colouring, Cauchy integral theorem, residues, contours), geometry and geometric algebra, functional analysis (Hahn-Banach, Riesz representation, norms and unit balls, projections, operators), graphs and graph algorithms, commutative diagrams and proof-structure diagrams, and STEM beyond pure maths (ODE phase portraits and equilibria, probability distributions and the central limit theorem, electric fields, projectile motion, RLC/RC circuits, thin-lens optics). Use whenever the user asks to visualise, draw, picture, sketch, plot, illustrate or \"show me\" any such concept, or is learning/revising a theorem or proof and a diagram would help, even if they never say \"visualisation\". Output is inline SVG / Mermaid in chat (JSXGraph only when dragging teaches), never slow renders.",
+      "train_passed": 10,
+      "train_failed": 4,
+      "train_total": 14,
+      "train_results": [
+        {
+          "query": "can you do a domain colouring of (z^2-1)/(z^2+1) so I can see the zeros and poles?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "geometric algebra rotor rotating the vector (1,0,0.5) by 60 degrees about the z axis, can you show it visually",
+          "should_trigger": true,
+          "trigger_rate": 0.5,
+          "triggers": 1,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "walk me through kruskal vs prim on this graph A-B:4, A-C:1, C-B:2, B-D:1 with pictures of each step",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "how does the central limit theorem look for sums of 8 dice vs the normal curve? show me",
+          "should_trigger": true,
+          "trigger_rate": 0.5,
+          "triggers": 1,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "show me the phase portrait for a damped pendulum, mark the equilibria and tell me which are stable",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "ok i'm revising galois theory tonight, can you show me the subfield lattice of Q(\u2074\u221a2, i) and which subgroups they match? i keep mixing up the order reversal",
+          "should_trigger": true,
+          "trigger_rate": 0.5,
+          "triggers": 1,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "visualise the residue theorem for f(z)=e^z/z^3 with a unit circle contour, i want to see where the poles are and what the residue is",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "help me design a logo for my maths tutoring business, something friendly with a pi symbol",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "my python function for the determinant of a 3x3 matrix returns the wrong sign, can you find the bug in this code",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "explain the big-O time complexity of dijkstra with a binary heap, i just need the reasoning in words",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "make a bar chart of our Q3 sales by region from this csv, colours should match our brand deck",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "make a line chart of daily active users over the last 90 days from this dataframe",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "draw an ER diagram for a library database with books, members and loans",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "convert this matplotlib script into plotly express, keep the same layout",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 2,
+      "test_total": 6,
+      "test_results": [
+        {
+          "query": "I need a dependency diagram for my proof: lemma 1 and lemma 2 both feed the main theorem. also check I haven't accidentally made it circular",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "i dont get hahn banach separation at all. can you sketch a convex polygon and a point outside it and the hyperplane between them",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "draw the cayley graph of the quaternion group Q8 and show what happens when you quotient by {1,-1}",
+          "should_trigger": true,
+          "trigger_rate": 0.5,
+          "triggers": 1,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "what is the galois group of x^5 - x - 1 over Q? just the answer and a one line reason please, no pictures",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "solve the ODE y'' + 3y' + 2y = 0 with y(0)=1, y'(0)=0 step by step algebraically",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "write a latex proof that sqrt(2) is irrational, full formal style for my problem set",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        }
+      ],
+      "passed": 10,
+      "failed": 4,
+      "total": 14,
+      "results": [
+        {
+          "query": "can you do a domain colouring of (z^2-1)/(z^2+1) so I can see the zeros and poles?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "geometric algebra rotor rotating the vector (1,0,0.5) by 60 degrees about the z axis, can you show it visually",
+          "should_trigger": true,
+          "trigger_rate": 0.5,
+          "triggers": 1,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "walk me through kruskal vs prim on this graph A-B:4, A-C:1, C-B:2, B-D:1 with pictures of each step",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "how does the central limit theorem look for sums of 8 dice vs the normal curve? show me",
+          "should_trigger": true,
+          "trigger_rate": 0.5,
+          "triggers": 1,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "show me the phase portrait for a damped pendulum, mark the equilibria and tell me which are stable",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "ok i'm revising galois theory tonight, can you show me the subfield lattice of Q(\u2074\u221a2, i) and which subgroups they match? i keep mixing up the order reversal",
+          "should_trigger": true,
+          "trigger_rate": 0.5,
+          "triggers": 1,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "visualise the residue theorem for f(z)=e^z/z^3 with a unit circle contour, i want to see where the poles are and what the residue is",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "help me design a logo for my maths tutoring business, something friendly with a pi symbol",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "my python function for the determinant of a 3x3 matrix returns the wrong sign, can you find the bug in this code",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "explain the big-O time complexity of dijkstra with a binary heap, i just need the reasoning in words",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "make a bar chart of our Q3 sales by region from this csv, colours should match our brand deck",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "make a line chart of daily active users over the last 90 days from this dataframe",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "draw an ER diagram for a library database with books, members and loans",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "convert this matplotlib script into plotly express, keep the same layout",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "description": "Use this skill to draw a correct, quick, in-chat diagram or plot of a specific mathematical or STEM concept. Trigger whenever the user wants to see, visualise, draw, plot, sketch, or walk through with pictures: domain colouring, zeros/poles, residues and contours, M\u00f6bius/conformal maps; groups, Cayley graphs, subgroup lattices, quotients, Galois and field towers; geometry and geometric algebra; norms, Hahn-Banach, Riesz, projections; graph algorithms (BFS/DFS, Dijkstra, Kruskal/Prim, max-flow); commutative or proof-dependency diagrams; ODE phase portraits and equilibria stability (pendulum, Lotka-Volterra), distributions and CLT, electric fields, projectile motion, RLC circuits, lens optics. Also use when someone is learning or revising a theorem or algorithm and a picture would help, even if they only say \"show me\", \"walk me through\" or \"mark the...\". Outputs inline SVG/Mermaid. Not for business data charts, dashboards, plotting-library code conversion, ER/software diagrams, logos, or plain coding questions.",
+      "train_passed": 10,
+      "train_failed": 4,
+      "train_total": 14,
+      "train_results": [
+        {
+          "query": "geometric algebra rotor rotating the vector (1,0,0.5) by 60 degrees about the z axis, can you show it visually",
+          "should_trigger": true,
+          "trigger_rate": 0.5,
+          "triggers": 1,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "can you do a domain colouring of (z^2-1)/(z^2+1) so I can see the zeros and poles?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "walk me through kruskal vs prim on this graph A-B:4, A-C:1, C-B:2, B-D:1 with pictures of each step",
+          "should_trigger": true,
+          "trigger_rate": 0.5,
+          "triggers": 1,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "how does the central limit theorem look for sums of 8 dice vs the normal curve? show me",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "show me the phase portrait for a damped pendulum, mark the equilibria and tell me which are stable",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "ok i'm revising galois theory tonight, can you show me the subfield lattice of Q(\u2074\u221a2, i) and which subgroups they match? i keep mixing up the order reversal",
+          "should_trigger": true,
+          "trigger_rate": 0.5,
+          "triggers": 1,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "visualise the residue theorem for f(z)=e^z/z^3 with a unit circle contour, i want to see where the poles are and what the residue is",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "help me design a logo for my maths tutoring business, something friendly with a pi symbol",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "my python function for the determinant of a 3x3 matrix returns the wrong sign, can you find the bug in this code",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "explain the big-O time complexity of dijkstra with a binary heap, i just need the reasoning in words",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "make a line chart of daily active users over the last 90 days from this dataframe",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "make a bar chart of our Q3 sales by region from this csv, colours should match our brand deck",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "draw an ER diagram for a library database with books, members and loans",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "convert this matplotlib script into plotly express, keep the same layout",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 2,
+      "test_total": 6,
+      "test_results": [
+        {
+          "query": "I need a dependency diagram for my proof: lemma 1 and lemma 2 both feed the main theorem. also check I haven't accidentally made it circular",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "i dont get hahn banach separation at all. can you sketch a convex polygon and a point outside it and the hyperplane between them",
+          "should_trigger": true,
+          "trigger_rate": 0.5,
+          "triggers": 1,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "draw the cayley graph of the quaternion group Q8 and show what happens when you quotient by {1,-1}",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "solve the ODE y'' + 3y' + 2y = 0 with y(0)=1, y'(0)=0 step by step algebraically",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "what is the galois group of x^5 - x - 1 over Q? just the answer and a one line reason please, no pictures",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "write a latex proof that sqrt(2) is irrational, full formal style for my problem set",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        }
+      ],
+      "passed": 10,
+      "failed": 4,
+      "total": 14,
+      "results": [
+        {
+          "query": "geometric algebra rotor rotating the vector (1,0,0.5) by 60 degrees about the z axis, can you show it visually",
+          "should_trigger": true,
+          "trigger_rate": 0.5,
+          "triggers": 1,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "can you do a domain colouring of (z^2-1)/(z^2+1) so I can see the zeros and poles?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "walk me through kruskal vs prim on this graph A-B:4, A-C:1, C-B:2, B-D:1 with pictures of each step",
+          "should_trigger": true,
+          "trigger_rate": 0.5,
+          "triggers": 1,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "how does the central limit theorem look for sums of 8 dice vs the normal curve? show me",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "show me the phase portrait for a damped pendulum, mark the equilibria and tell me which are stable",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "ok i'm revising galois theory tonight, can you show me the subfield lattice of Q(\u2074\u221a2, i) and which subgroups they match? i keep mixing up the order reversal",
+          "should_trigger": true,
+          "trigger_rate": 0.5,
+          "triggers": 1,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "visualise the residue theorem for f(z)=e^z/z^3 with a unit circle contour, i want to see where the poles are and what the residue is",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "help me design a logo for my maths tutoring business, something friendly with a pi symbol",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "my python function for the determinant of a 3x3 matrix returns the wrong sign, can you find the bug in this code",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "explain the big-O time complexity of dijkstra with a binary heap, i just need the reasoning in words",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "make a line chart of daily active users over the last 90 days from this dataframe",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "make a bar chart of our Q3 sales by region from this csv, colours should match our brand deck",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "draw an ER diagram for a library database with books, members and loans",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "convert this matplotlib script into plotly express, keep the same layout",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "description": "Use this skill when the user wants to SEE a specific mathematical or STEM concept as a picture: \"show me\", \"visualise\", \"draw\", \"plot\", \"sketch\", \"mark the...\", \"walk me through\" an example. Covers complex analysis (domain colouring, zeros and poles, residues, contour integrals, M\u00f6bius/conformal maps), abstract algebra (groups, Cayley graphs, subgroup lattices, Galois/field towers), geometry and geometric algebra, functional analysis (norms, Hahn-Banach, Riesz, projections), graph algorithms (BFS/DFS, Dijkstra, Kruskal/Prim, max-flow), commutative and proof diagrams, and applied STEM: ODE phase portraits and equilibria stability (pendulum, predator-prey), distributions and the central limit theorem (dice sums vs normal curve), electric fields, projectile motion, RLC circuits, lens optics. Also use when someone is learning or revising a theorem or algorithm and a diagram would help. Outputs quick, verified inline SVG/Mermaid. Not for business or data-analysis charts, dashboards, plotting-library code conversion, ER/software diagrams, logos, or plain coding questions.",
+      "train_passed": 8,
+      "train_failed": 6,
+      "train_total": 14,
+      "train_results": [
+        {
+          "query": "walk me through kruskal vs prim on this graph A-B:4, A-C:1, C-B:2, B-D:1 with pictures of each step",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "can you do a domain colouring of (z^2-1)/(z^2+1) so I can see the zeros and poles?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "geometric algebra rotor rotating the vector (1,0,0.5) by 60 degrees about the z axis, can you show it visually",
+          "should_trigger": true,
+          "trigger_rate": 0.5,
+          "triggers": 1,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "how does the central limit theorem look for sums of 8 dice vs the normal curve? show me",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "show me the phase portrait for a damped pendulum, mark the equilibria and tell me which are stable",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "visualise the residue theorem for f(z)=e^z/z^3 with a unit circle contour, i want to see where the poles are and what the residue is",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "help me design a logo for my maths tutoring business, something friendly with a pi symbol",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "my python function for the determinant of a 3x3 matrix returns the wrong sign, can you find the bug in this code",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "ok i'm revising galois theory tonight, can you show me the subfield lattice of Q(\u2074\u221a2, i) and which subgroups they match? i keep mixing up the order reversal",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "explain the big-O time complexity of dijkstra with a binary heap, i just need the reasoning in words",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "make a bar chart of our Q3 sales by region from this csv, colours should match our brand deck",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "make a line chart of daily active users over the last 90 days from this dataframe",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "draw an ER diagram for a library database with books, members and loans",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "convert this matplotlib script into plotly express, keep the same layout",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        }
+      ],
+      "test_passed": 3,
+      "test_failed": 3,
+      "test_total": 6,
+      "test_results": [
+        {
+          "query": "I need a dependency diagram for my proof: lemma 1 and lemma 2 both feed the main theorem. also check I haven't accidentally made it circular",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "i dont get hahn banach separation at all. can you sketch a convex polygon and a point outside it and the hyperplane between them",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "draw the cayley graph of the quaternion group Q8 and show what happens when you quotient by {1,-1}",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "write a latex proof that sqrt(2) is irrational, full formal style for my problem set",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "solve the ODE y'' + 3y' + 2y = 0 with y(0)=1, y'(0)=0 step by step algebraically",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "what is the galois group of x^5 - x - 1 over Q? just the answer and a one line reason please, no pictures",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        }
+      ],
+      "passed": 8,
+      "failed": 6,
+      "total": 14,
+      "results": [
+        {
+          "query": "walk me through kruskal vs prim on this graph A-B:4, A-C:1, C-B:2, B-D:1 with pictures of each step",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "can you do a domain colouring of (z^2-1)/(z^2+1) so I can see the zeros and poles?",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "geometric algebra rotor rotating the vector (1,0,0.5) by 60 degrees about the z axis, can you show it visually",
+          "should_trigger": true,
+          "trigger_rate": 0.5,
+          "triggers": 1,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "how does the central limit theorem look for sums of 8 dice vs the normal curve? show me",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "show me the phase portrait for a damped pendulum, mark the equilibria and tell me which are stable",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "visualise the residue theorem for f(z)=e^z/z^3 with a unit circle contour, i want to see where the poles are and what the residue is",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "help me design a logo for my maths tutoring business, something friendly with a pi symbol",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "my python function for the determinant of a 3x3 matrix returns the wrong sign, can you find the bug in this code",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "ok i'm revising galois theory tonight, can you show me the subfield lattice of Q(\u2074\u221a2, i) and which subgroups they match? i keep mixing up the order reversal",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": false
+        },
+        {
+          "query": "explain the big-O time complexity of dijkstra with a binary heap, i just need the reasoning in words",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "make a bar chart of our Q3 sales by region from this csv, colours should match our brand deck",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "make a line chart of daily active users over the last 90 days from this dataframe",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "draw an ER diagram for a library database with books, members and loans",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        },
+        {
+          "query": "convert this matplotlib script into plotly express, keep the same layout",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 2,
+          "pass": true
+        }
+      ]
+    }
+  ]
+}
